@@ -1,0 +1,460 @@
+/*
+  Alpha Global Invest – Website v3
+  This stylesheet defines the core look and feel for the refined website.
+  Colours derive directly from the master mark: deep navy (for text and accents)
+  and warm beige (for backgrounds). Typography uses classic serif fonts to
+  communicate tradition, trust and long‑term stability. Layouts are clean and
+  understated to reflect discretion and premium positioning.
+*/
+
+/* CSS variables for easy theme adjustments */
+:root {
+  --navy: #071729;
+  --beige: #F8F1E9;
+  --shadow: 0 8px 20px rgba(7, 23, 41, 0.15);
+  --radius: 10px;
+  --maxw: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  color: var(--navy);
+  background: var(--beige);
+  line-height: 1.6;
+  /* Improve font rendering for smoother text */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--navy);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--navy);
+}
+
+/* Container helper */
+.container {
+  width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Header and navigation */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(248, 241, 233, 0.9);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(7, 23, 41, 0.1);
+  z-index: 1000;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+header .brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  /* Make the entire brand area clickable without underline and inherit text colour */
+  text-decoration: none;
+  color: var(--navy);
+}
+
+/* Preserve colour on hover for brand link */
+header .brand:hover {
+  color: var(--navy);
+}
+header .brand img {
+  /* Use a slimmer icon for the key; height scales proportionally */
+  width: 40px;
+  height: auto;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+header nav a {
+  font-size: 0.85rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+/* Highlight active nav item with underline */
+header nav a.active {
+  border-bottom: 2px solid var(--navy);
+  padding-bottom: 0.2rem;
+}
+header nav a:hover {
+  opacity: 1;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  text-align: center;
+  /* Use beige text on dark hero background for maximum contrast */
+  color: var(--beige);
+  background-size: cover;
+  /* Position the hero background at the top to reveal the mountain peaks */
+  background-position: center top;
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Apply a dark overlay to give the mountain imagery a more serious tone */
+  background: rgba(7, 23, 41, 0.4);
+  z-index: 0;
+}
+.hero .content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  max-width: 800px;
+}
+.hero h1 {
+  margin: 0 0 1rem;
+  font-size: 2.8rem;
+  line-height: 1.1;
+}
+.hero .tagline {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 1;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.8rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid var(--navy);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-primary {
+  background: var(--navy);
+  color: var(--beige);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+.btn-outline {
+  background: transparent;
+  color: var(--navy);
+}
+.btn-outline:hover {
+  background: var(--navy);
+  color: var(--beige);
+}
+
+/* General section styling */
+.section {
+  padding: 4rem 0;
+}
+
+/* Call to action section */
+.cta {
+  text-align: center;
+}
+.cta h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.cta p {
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.section h2::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 2px;
+  background: var(--navy);
+  /* Full opacity on section divider line */
+  opacity: 1;
+  margin: 1rem auto 0;
+}
+
+/* About section */
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Values */
+.values .items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.value {
+  /* Increase opacity on value panels for improved readability */
+  background: rgba(248, 241, 233, 0.95);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.value h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+.value p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Client profile */
+.client .items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.client .item {
+  /* Increase opacity on client profile cards */
+  background: rgba(248, 241, 233, 0.95);
+  padding: 1.5rem 2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  min-width: 180px;
+}
+.client .item h4 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.client .item p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Contact section */
+.contact p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  font-size: 1rem;
+}
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+.contact input,
+ .contact textarea {
+  padding: 0.8rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(7, 23, 41, 0.2);
+  /* Increase opacity on form fields for better contrast */
+  background: rgba(248, 241, 233, 0.95);
+  font-family: inherit;
+  color: var(--navy);
+}
+.contact textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+.contact button {
+  justify-self: start;
+}
+
+/* Login page form styles to mirror the contact form */
+.login form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+.login input {
+  padding: 0.8rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(7, 23, 41, 0.2);
+  background: rgba(248, 241, 233, 0.95);
+  font-family: inherit;
+  color: var(--navy);
+}
+.login button {
+  justify-self: center;
+}
+
+/* Footer */
+footer {
+  padding: 1.5rem 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+  border-top: 1px solid rgba(7, 23, 41, 0.1);
+  background: rgba(248, 241, 233, 0.9);
+}
+footer a {
+  color: var(--navy);
+  text-decoration: underline;
+  opacity: 1;
+}
+footer a:hover {
+  opacity: 1;
+}
+
+/* Services grid */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+.service-card {
+  /* Increase opacity on service cards for clear text */
+  background: rgba(248, 241, 233, 0.95);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.service-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+.service-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+.service-card p {
+  margin: 0 0 1rem;
+  flex-grow: 1;
+  font-size: 0.95rem;
+}
+.service-card a {
+  align-self: start;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--navy);
+  border-bottom: 1px solid rgba(7, 23, 41, 0.3);
+  padding-bottom: 0.1rem;
+  transition: border-color 0.2s ease;
+}
+.service-card a:hover {
+  border-color: var(--navy);
+}
+
+/* Service page layout */
+.service-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+.service-detail h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.service-detail p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+.service-hero {
+  min-height: 50vh;
+  background-size: cover;
+  /* Position the service hero background at the top to reveal mountain peaks */
+  background-position: center top;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem;
+  /* Use beige text on dark service hero background */
+  color: var(--beige);
+}
+.service-hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Apply a dark overlay for service hero sections */
+  background: rgba(7, 23, 41, 0.4);
+  z-index: 0;
+}
+.service-hero h1 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Language selector buttons: minimal, no button backgrounds */
+.lang-selector {
+  display: flex;
+  gap: 0.5rem;
+}
+.lang-selector button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  color: var(--navy);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.lang-selector button:hover {
+  text-decoration: underline;
+}
+.lang-selector button.active {
+  text-decoration: underline;
+  font-weight: 600;
+}

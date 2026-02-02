@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpha Global Invest – Private Investment Office</title>
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Preload hero image to avoid flash of unstyled content -->
+    <link rel="preload" as="image" href="images/piz-bernina.webp" />
+  </head>
+  <body>
+    <!-- Primary navigation and branding -->
+    <header>
+      <div class="container">
+        <a href="index.html" class="brand">
+          <!-- Use the key icon only; clicking returns to home -->
+          <img src="images/key-icon.png" alt="Key icon" />
+          <span class="brand-name">Alpha Global Invest</span>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="#values" data-i18n="nav.values">Values</a></li>
+            <li><a href="client.html" data-i18n="nav.client">Client</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Language selector -->
+        <div class="lang-selector">
+          <button type="button" data-lang-btn="en">EN</button>
+          <button type="button" data-lang-btn="de">DE</button>
+          <button type="button" data-lang-btn="it">IT</button>
+          <button type="button" data-lang-btn="fr">FR</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero section with Piz Bernina photograph -->
+    <section class="hero" style="background-image: url('images/piz-bernina.webp');">
+      <div class="content">
+        <h2 data-i18n="hero.kicker">By invitation. By appointment.</h2>
+        <h1 data-i18n="hero.h1">Private Investment Office</h1>
+        <p class="tagline" data-i18n="hero.tagline">
+          A discreet partner for preserving and growing family capital over generations.
+        </p>
+        <a href="services.html" class="btn btn-primary" data-i18n="hero.cta.services">Our Services</a>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 data-i18n="about.title">About Alpha Global Invest</h2>
+        <p data-i18n="about.text">
+          Alpha Global Invest is an independent private investment office built on
+          Swiss‑rooted values of discretion, safety and precision. We serve private clients and families,
+          focusing on capital preservation and long‑term growth. Our mission is to protect and grow your wealth
+          through disciplined risk management, careful execution and a long‑term perspective. Engagements are
+          selective and by appointment only.
+        </p>
+      </div>
+    </section>
+
+    <!-- Values section -->
+    <section id="values" class="section values">
+      <div class="container">
+        <h2 data-i18n="values.title">Our Values</h2>
+        <div class="items">
+          <div class="value">
+            <h3 data-i18n="values.safety.title">Safety &amp; Security</h3>
+            <p data-i18n="values.safety.text">Capital preservation and disciplined risk management underpin every decision we make.</p>
+          </div>
+          <div class="value">
+            <h3 data-i18n="values.discretion.title">Discretion &amp; Privacy</h3>
+            <p data-i18n="values.discretion.text">We operate quietly and confidentially, maintaining a low public profile and need‑to‑know communication.</p>
+          </div>
+          <div class="value">
+            <h3 data-i18n="values.family.title">Family &amp; Legacy</h3>
+            <p data-i18n="values.family.text">Multi‑generational thinking ensures your wealth endures and benefits your heirs responsibly.</p>
+          </div>
+          <div class="value">
+            <h3 data-i18n="values.precision.title">Precision &amp; Tradition</h3>
+            <p data-i18n="values.precision.text">Rooted in centuries‑old craftsmanship, we apply rigour and exactness in every service and relationship.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Call‑to‑action section for appointments -->
+    <section class="section cta">
+      <div class="container">
+        <h2 data-i18n="cta.title">Ready to discuss? Book an appointment</h2>
+        <p style="max-width:720px; margin:0 auto 1.5rem; text-align:center; font-size:1.1rem;" data-i18n="cta.text">
+          We invite prospective clients to meet with us privately to explore how our services align with your
+          family’s objectives.
+        </p>
+        <a href="contact.html" class="btn btn-primary" data-i18n="cta.button">Book appointment</a>
+      </div>
+    </section>
+
+    <!-- Footer with discreet legal link -->
+    <footer>
+      <p data-i18n="footer.copy">
+        © 2025 Alpha Global Invest. All rights reserved.
+      </p>
+      <p style="font-size:0.75rem; margin-top:0.2rem;">
+        <a href="legal.html" data-i18n="footer.legal">Legal &amp; Disclaimer</a>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpha Global Invest – Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Preload hero image to avoid flash of unstyled content -->
+    <link rel="preload" as="image" href="images/piz-palu.webp" />
+  </head>
+  <body>
+    <!-- Header with consistent navigation -->
+    <header>
+      <div class="container">
+        <a href="index.html" class="brand">
+          <img src="images/key-icon.png" alt="Key icon" />
+          <span class="brand-name">Alpha Global Invest</span>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="index.html#values" data-i18n="nav.values">Values</a></li>
+            <li><a href="client.html" data-i18n="nav.client">Client</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="lang-selector">
+          <button type="button" data-lang-btn="en">EN</button>
+          <button type="button" data-lang-btn="de">DE</button>
+          <button type="button" data-lang-btn="it">IT</button>
+          <button type="button" data-lang-btn="fr">FR</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero section for Contact page (Piz Palü) -->
+    <section class="service-hero" style="background-image: url('images/piz-palu.webp');">
+      <h1 data-i18n="contact.title">Contact&nbsp;Us</h1>
+    </section>
+
+    <section class="section contact">
+      <div class="container">
+        <h2 data-i18n="contact.title">Contact&nbsp;Us</h2>
+        <p data-i18n="contact.subtitle" style="max-width:700px; margin:0 auto 2rem; text-align:center; font-size:1.1rem;">
+          Ready to discuss how we can protect and grow your family capital? Send us a confidential request
+          and we will contact you personally.
+        </p>
+        <form class="contact-form" action="#" method="post">
+          <input type="text" name="name" data-ph="contact.name" placeholder="Your name" required />
+          <input type="email" name="email" data-ph="contact.email" placeholder="Your email" required />
+          <textarea name="message" data-ph="contact.message" placeholder="How can we assist you?" required></textarea>
+          <button type="submit" class="btn btn-primary" data-i18n="contact.submit">Send&nbsp;Request</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p data-i18n="footer.copy">© 2025 Alpha Global Invest. All rights reserved.</p>
+      <p style="font-size:0.75rem; margin-top:0.2rem;">
+        <a href="legal.html" data-i18n="footer.legal">Legal &amp; Disclaimer</a>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

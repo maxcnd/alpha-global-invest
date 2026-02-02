@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpha Global Invest – Client Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Preload hero image to avoid flash of unstyled content -->
+    <link rel="preload" as="image" href="images/piz-buin.webp" />
+  </head>
+  <body>
+    <!-- Header with consistent navigation -->
+    <header>
+      <div class="container">
+        <a href="index.html" class="brand">
+          <img src="images/key-icon.png" alt="Key icon" />
+          <span class="brand-name">Alpha Global Invest</span>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="index.html#values" data-i18n="nav.values">Values</a></li>
+            <li><a href="client.html" data-i18n="nav.client" class="active">Client</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="lang-selector">
+          <button type="button" data-lang-btn="en">EN</button>
+          <button type="button" data-lang-btn="de">DE</button>
+          <button type="button" data-lang-btn="it">IT</button>
+          <button type="button" data-lang-btn="fr">FR</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero section for Client Login (Piz Buin or other Grisons mountain) -->
+    <section class="service-hero" style="background-image: url('images/piz-buin.webp');">
+      <h1 data-i18n="login.title">Client&nbsp;Login</h1>
+    </section>
+
+    <section class="section login">
+      <div class="container" style="max-width:600px; text-align:center;">
+        <!-- Intro text for the login page -->
+        <p data-i18n="login.intro" style="max-width:480px; margin:0 auto 2rem; font-size:1.1rem;">
+          Existing clients can access their accounts below.
+        </p>
+        <!-- Client login form -->
+        <form class="login-form" action="#" method="post" style="display:flex; flex-direction:column; gap:1rem;">
+          <label>
+            <span class="visually-hidden" data-i18n="login.username">Username</span>
+            <input type="text" name="username" data-ph="login.username" placeholder="Username" required />
+          </label>
+          <label>
+            <span class="visually-hidden" data-i18n="login.password">Password</span>
+            <input type="password" name="password" data-ph="login.password" placeholder="Password" required />
+          </label>
+          <button type="submit" class="btn btn-primary" data-i18n="login.submit">Log&nbsp;in</button>
+        </form>
+        <p class="forgot" style="margin-top:1rem; font-size:0.85rem;">
+          <span data-i18n="login.forgot">Forgot password?</span>
+          <a href="contact.html" data-i18n="login.forgot.link">Contact us</a>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p data-i18n="footer.copy">© 2025 Alpha Global Invest. All rights reserved.</p>
+      <p style="font-size:0.75rem; margin-top:0.2rem;">
+        <a href="legal.html" data-i18n="footer.legal">Legal &amp; Disclaimer</a>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
