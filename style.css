@@ -117,7 +117,7 @@ header nav a:hover {
   color: var(--beige);
   background-size: cover;
   /* Position the hero background at the top to reveal the mountain peaks */
-  background-position: center top;
+  background-position: center center;
   overflow: hidden;
 }
 .hero::after {
@@ -407,7 +407,7 @@ footer a:hover {
   min-height: 50vh;
   background-size: cover;
   /* Position the service hero background at the top to reveal mountain peaks */
-  background-position: center top;
+  background-position: center center;
   position: relative;
   display: flex;
   align-items: flex-end;
