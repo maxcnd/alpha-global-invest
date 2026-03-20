@@ -71,6 +71,9 @@ const translations = {
     ‘report.title’: ‘Quarterly Investment Report’,
     ‘report.text’: ‘Review our latest quarterly performance overview, including portfolio returns, asset allocation and currency exposure.’,
     ‘report.button’: ‘Download Q1 2026 Report’,
+    ‘report.label.portfolio’: ‘Portfolio Return’,
+    ‘report.label.sp500’: ‘S&P 500’,
+    ‘report.label.alpha’: ‘Alpha Generated’,
     // Call to action for appointment
     ‘cta.title’: ‘Ready to discuss? Book an appointment’,
     ‘cta.button’: ‘Book appointment’,
@@ -196,6 +199,9 @@ const translations = {
     'report.title': 'Quartalsbericht zur Anlageperformance',
     'report.text': 'Lesen Sie unseren aktuellen Quartalsbericht mit Portfoliorenditen, Vermögensallokation und Währungsexposition.',
     'report.button': 'Q1 2026 Bericht herunterladen',
+    'report.label.portfolio': 'Portfoliorendite',
+    'report.label.sp500': 'S&P 500',
+    'report.label.alpha': 'Alpha erzielt',
     // Call to action for appointment
     'cta.title': 'Bereit zum Gespräch? Termin vereinbaren',
     'cta.text': 'Wir laden potenzielle Klienten zu einem persönlichen Treffen ein, um zu prüfen, wie unsere Leistungen zu Ihren familiären Zielen passen.',
@@ -378,6 +384,9 @@ const translations = {
     'report.title': 'Rapporto trimestrale sugli investimenti',
     'report.text': 'Consulta il nostro ultimo rapporto trimestrale con rendimenti del portafoglio, allocazione degli asset e esposizione valutaria.',
     'report.button': 'Scarica rapporto Q1 2026',
+    'report.label.portfolio': 'Rendimento portafoglio',
+    'report.label.sp500': 'S&P 500',
+    'report.label.alpha': 'Alpha generato',
     // Call to action per gli appuntamenti
     'cta.title': 'Pronti a confrontarci? Fissa un appuntamento',
     'cta.text': 'Invitiamo i potenziali clienti a incontrarci privatamente per valutare come i nostri servizi possano allinearsi con gli obiettivi della vostra famiglia.',
@@ -502,6 +511,9 @@ const translations = {
     ‘report.title’: ‘Rapport trimestriel d\’investissement’,
     ‘report.text’: ‘Consultez notre dernier rapport trimestriel avec les rendements du portefeuille, l\’allocation d\’actifs et l\’exposition aux devises.’,
     ‘report.button’: ‘Télécharger le rapport Q1 2026’,
+    ‘report.label.portfolio’: ‘Rendement du portefeuille’,
+    ‘report.label.sp500’: ‘S&P 500’,
+    ‘report.label.alpha’: ‘Alpha généré’,
     // Call to action pour les rendez‑vous
     'cta.title': 'Prêts à discuter ? Fixez un rendez‑vous',
     'cta.text': 'Nous invitons nos clients potentiels à un entretien privé pour explorer comment nos services correspondent aux objectifs de votre famille.',

@@ -46,10 +46,12 @@
           Ready to discuss how we can protect and grow your family capital? Send us a confidential request
           and we will contact you personally.
         </p>
-        <form class="contact-form" action="#" method="post">
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
           <input type="text" name="name" data-ph="contact.name" placeholder="Your name" required />
           <input type="email" name="email" data-ph="contact.email" placeholder="Your email" required />
           <textarea name="message" data-ph="contact.message" placeholder="How can we assist you?" required></textarea>
+          <input type="hidden" name="_subject" value="New inquiry — Alpha Global Invest" />
+          <input type="hidden" name="_next" value="https://maxcnd.github.io/alpha-global-invest/contact-success.html" />
           <button type="submit" class="btn btn-primary" data-i18n="contact.submit">Send&nbsp;Request</button>
         </form>
       </div>
