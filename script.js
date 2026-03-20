@@ -67,10 +67,14 @@ const translations = {
     // Footer
     'footer.copy': '© 2025 Alpha Global Invest. All rights reserved.',
     'footer.legal': 'Legal & Disclaimer',
+    // Quarterly report
+    ‘report.title’: ‘Quarterly Investment Report’,
+    ‘report.text’: ‘Review our latest quarterly performance overview, including portfolio returns, asset allocation and currency exposure.’,
+    ‘report.button’: ‘Download Q1 2026 Report’,
     // Call to action for appointment
-    'cta.title': 'Ready to discuss? Book an appointment',
-    'cta.button': 'Book appointment',
-    'cta.text': 'We invite prospective clients to meet with us privately to explore how our services align with your family’s objectives.',
+    ‘cta.title’: ‘Ready to discuss? Book an appointment’,
+    ‘cta.button’: ‘Book appointment’,
+    ‘cta.text’: ‘We invite prospective clients to meet with us privately to explore how our services align with your family’s objectives.’,
     // Services page
     'services.title': 'Our Services',
     'services.intro': 'Structured around what high‑conviction families actually need — with one accountable partner and a calm, rigorous process. Select a service below to read more about how we work.',
@@ -188,6 +192,10 @@ const translations = {
     // Footer
     'footer.copy': '© 2025 Alpha Global Invest. Alle Rechte vorbehalten.',
     'footer.legal': 'Rechtliches & Haftungsausschluss',
+    // Quarterly report
+    'report.title': 'Quartalsbericht zur Anlageperformance',
+    'report.text': 'Lesen Sie unseren aktuellen Quartalsbericht mit Portfoliorenditen, Vermögensallokation und Währungsexposition.',
+    'report.button': 'Q1 2026 Bericht herunterladen',
     // Call to action for appointment
     'cta.title': 'Bereit zum Gespräch? Termin vereinbaren',
     'cta.text': 'Wir laden potenzielle Klienten zu einem persönlichen Treffen ein, um zu prüfen, wie unsere Leistungen zu Ihren familiären Zielen passen.',
@@ -366,6 +374,10 @@ const translations = {
     'legal.p1': 'Le informazioni contenute in questo sito web sono fornite esclusivamente a scopo informativo generale e non costituiscono consulenza finanziaria o un’offerta. I servizi sono offerti solo dove consentito dalla legge e soggetti a idoneità e disponibilità. Vi preghiamo di contattarci privatamente per condizioni formali, termini e divulgazioni normative.',
     'legal.p2': 'Alpha Global Invest opera in modo indipendente. Lo status normativo e le registrazioni saranno forniti su richiesta una volta disponibili.',
     'legal.p3': 'Adottiamo una cultura incentrata sulla privacy. Qualsiasi comunicazione inviata tramite il modulo di contatto viene trattata in modo confidenziale. Vi preghiamo di non inviare informazioni personali sensibili se non richiesto tramite un canale sicuro concordato.',
+    // Rapporto trimestrale
+    'report.title': 'Rapporto trimestrale sugli investimenti',
+    'report.text': 'Consulta il nostro ultimo rapporto trimestrale con rendimenti del portafoglio, allocazione degli asset e esposizione valutaria.',
+    'report.button': 'Scarica rapporto Q1 2026',
     // Call to action per gli appuntamenti
     'cta.title': 'Pronti a confrontarci? Fissa un appuntamento',
     'cta.text': 'Invitiamo i potenziali clienti a incontrarci privatamente per valutare come i nostri servizi possano allinearsi con gli obiettivi della vostra famiglia.',
@@ -485,7 +497,11 @@ const translations = {
     'legal.title': 'Mentions légales & Avertissement',
     'legal.p1': 'Les informations présentées sur ce site sont fournies à titre informatif général et ne constituent pas un conseil en investissement ni une offre. Les services sont proposés uniquement lorsqu’ils sont autorisés par la loi et soumis à l’adéquation et à la disponibilité. Veuillez nous contacter en privé pour connaître les conditions formelles, les modalités et les divulgations réglementaires.',
     'legal.p2': 'Alpha Global Invest opère de manière indépendante. Le statut réglementaire et les enregistrements seront fournis sur demande dès qu’ils seront disponibles.',
-    'legal.p3': 'Nous adoptons une culture axée sur la confidentialité. Toute communication que vous envoyez via le formulaire de contact est traitée de manière confidentielle. Veuillez ne pas envoyer d’informations personnelles sensibles sauf si cela est demandé via un canal sécurisé convenu.',
+    ‘legal.p3’: ‘Nous adoptons une culture axée sur la confidentialité. Toute communication que vous envoyez via le formulaire de contact est traitée de manière confidentielle. Veuillez ne pas envoyer d’informations personnelles sensibles sauf si cela est demandé via un canal sécurisé convenu.’,
+    // Rapport trimestriel
+    ‘report.title’: ‘Rapport trimestriel d\’investissement’,
+    ‘report.text’: ‘Consultez notre dernier rapport trimestriel avec les rendements du portefeuille, l\’allocation d\’actifs et l\’exposition aux devises.’,
+    ‘report.button’: ‘Télécharger le rapport Q1 2026’,
     // Call to action pour les rendez‑vous
     'cta.title': 'Prêts à discuter ? Fixez un rendez‑vous',
     'cta.text': 'Nous invitons nos clients potentiels à un entretien privé pour explorer comment nos services correspondent aux objectifs de votre famille.',
