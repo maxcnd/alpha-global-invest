@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <title>Alpha Global Invest – Message Sent</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -32,12 +36,13 @@
     </header>
 
     <section class="section cta" style="min-height:60vh; display:flex; align-items:center;">
-      <div class="container">
-        <h2>Thank you for your inquiry</h2>
-        <p style="max-width:600px; margin:0 auto 1.5rem; text-align:center; font-size:1.1rem;">
+      <div class="container" style="text-align:center;">
+        <img src="images/key-icon.png" alt="Alpha Global Invest" style="height:88px; width:auto; margin:0 auto 1.25rem; display:block;" />
+        <h2 data-i18n="success.title">Thank you for your inquiry</h2>
+        <p style="max-width:600px; margin:0 auto 1.75rem; text-align:center; font-size:1.1rem;" data-i18n="success.text">
           Your message has been received. We will contact you personally within two business days.
         </p>
-        <a href="index.html" class="btn btn-primary">Return to Homepage</a>
+        <a href="index.html" class="btn btn-primary" data-i18n="success.button">Return to Homepage</a>
       </div>
     </section>
 
@@ -47,6 +52,9 @@
         <a href="legal.html" data-i18n="footer.legal">Legal &amp; Disclaimer</a>
       </p>
     </footer>
+    <!-- GoatCounter analytics: replace YOURCODE with your site code from https://www.goatcounter.com/settings -->
+    <script data-goatcounter="https://YOURCODE.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
